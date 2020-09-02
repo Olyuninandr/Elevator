@@ -2,7 +2,7 @@
 require_once('layouts/header.php');
 
 
-if (isset($_GET['floor'])) {
+if (isset($_GET['floor'])) :
     if ($_GET['floor'] == 'stop') {
         $floor = rand(1, $_GET['building']);
         $str = "<br>Обережно! Ви зупинилися між " . $floor . " і " . ($floor + 1) . " поверхами!";
@@ -12,7 +12,7 @@ if (isset($_GET['floor'])) {
         $str = "<br>Ви вже на цьому поверсі";
     } else
         $str = "<br>Вітаємо на " . $_GET['floor'] . " поверсі!";
-} ?>
+ ?>
 
 <div class="container">
     <div class="row justify-content-center">
@@ -26,3 +26,4 @@ if (isset($_GET['floor'])) {
         </h3>
     </div>
 </div>
+<?php endif ?>
