@@ -23,7 +23,7 @@ $myFloor = $_POST['floor'];
 $building = $_POST['building'];
 
 if(empty($building) or empty($myFloor)):
-    $str = "Ви не ввели обов'язкові данні";
+    $str = "Ви не ввели обов'язкові данні!";
     message($str);
 
 elseif ($myFloor > $building):
