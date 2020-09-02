@@ -21,8 +21,8 @@ require_once('layouts/header.php')
                 <input class="" type="number" id="building" name="building" max="163" min="1">
             </div>
         </div>
-        <br>
 
+        <br>
         <div class="row justify-content-center">
             <div class="row">
                 <button type="submit" class="btn btn-primary btn-lg">Викликати ліфт</button>
